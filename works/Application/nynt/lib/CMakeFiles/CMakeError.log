@@ -1,0 +1,898 @@
+Performing C SOURCE FILE Test HAVE_GCC_PREFERRED_STACK_BOUNDARY failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_970d7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_970d7.dir/build.make CMakeFiles/cmTC_970d7.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_970d7.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_GCC_PREFERRED_STACK_BOUNDARY -mpreferred-stack-boundary=2   -o CMakeFiles/cmTC_970d7.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-mpreferred-stack-boundary=2’; did you mean ‘-mstructure-size-boundary=’?
+CMakeFiles/cmTC_970d7.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_970d7.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_970d7.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_970d7/fast' failed
+make: *** [cmTC_970d7/fast] Error 2
+
+Source file was:
+int x = 0; int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_MMX failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_21379/fast"
+/usr/bin/make -f CMakeFiles/cmTC_21379.dir/build.make CMakeFiles/cmTC_21379.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_21379.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_MMX -mmmx   -o CMakeFiles/cmTC_21379.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-mmmx’
+CMakeFiles/cmTC_21379.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_21379.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_21379.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_21379/fast' failed
+make: *** [cmTC_21379/fast] Error 2
+
+Source file was:
+
+          #ifdef __MINGW32__
+          #include <_mingw.h>
+          #ifdef __MINGW64_VERSION_MAJOR
+          #include <intrin.h>
+          #else
+          #include <mmintrin.h>
+          #endif
+          #else
+          #include <mmintrin.h>
+          #endif
+          #ifndef __MMX__
+          #error Assembler CPP flag not enabled
+          #endif
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_3DNOW failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c1d6b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c1d6b.dir/build.make CMakeFiles/cmTC_c1d6b.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c1d6b.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_3DNOW -m3dnow   -o CMakeFiles/cmTC_c1d6b.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-m3dnow’
+CMakeFiles/cmTC_c1d6b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_c1d6b.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_c1d6b.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c1d6b/fast' failed
+make: *** [cmTC_c1d6b/fast] Error 2
+
+Source file was:
+
+          #include <mm3dnow.h>
+          #ifndef __3dNOW__
+          #error Assembler CPP flag not enabled
+          #endif
+          int main(int argc, char **argv) {
+            void *p = 0;
+            _m_prefetch(p);
+          }
+Performing C SOURCE FILE Test HAVE_SSE failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c8a79/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c8a79.dir/build.make CMakeFiles/cmTC_c8a79.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c8a79.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_SSE -msse   -o CMakeFiles/cmTC_c8a79.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-msse’; did you mean ‘-fdse’?
+CMakeFiles/cmTC_c8a79.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_c8a79.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_c8a79.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c8a79/fast' failed
+make: *** [cmTC_c8a79/fast] Error 2
+
+Source file was:
+
+          #ifdef __MINGW32__
+          #include <_mingw.h>
+          #ifdef __MINGW64_VERSION_MAJOR
+          #include <intrin.h>
+          #else
+          #include <xmmintrin.h>
+          #endif
+          #else
+          #include <xmmintrin.h>
+          #endif
+          #ifndef __SSE__
+          #error Assembler CPP flag not enabled
+          #endif
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_FP_387 failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eee54/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eee54.dir/build.make CMakeFiles/cmTC_eee54.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eee54.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_FP_387   -mfpmath=387 -o CMakeFiles/cmTC_eee54.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option '-mfpmath=387'
+CMakeFiles/cmTC_eee54.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_eee54.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_eee54.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_eee54/fast' failed
+make: *** [cmTC_eee54/fast] Error 2
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file immintrin.h exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1ebf8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1ebf8.dir/build.make CMakeFiles/cmTC_1ebf8.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1ebf8.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos    -o CMakeFiles/cmTC_1ebf8.dir/CheckIncludeFile.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: immintrin.h: No such file or directory
+ #include <immintrin.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_1ebf8.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_1ebf8.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_1ebf8.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1ebf8/fast' failed
+make: *** [cmTC_1ebf8/fast] Error 2
+
+
+Performing C SOURCE FILE Test HAVE_ALTIVEC_H_HDR failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d6496/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d6496.dir/build.make CMakeFiles/cmTC_d6496.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d6496.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_ALTIVEC_H_HDR -maltivec   -o CMakeFiles/cmTC_d6496.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-maltivec’; did you mean ‘-mglibc’?
+CMakeFiles/cmTC_d6496.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d6496.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_d6496.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d6496/fast' failed
+make: *** [cmTC_d6496/fast] Error 2
+
+Source file was:
+
+          #include <altivec.h>
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Performing C SOURCE FILE Test HAVE_ALTIVEC failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_478d8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_478d8.dir/build.make CMakeFiles/cmTC_478d8.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_478d8.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_ALTIVEC -maltivec   -o CMakeFiles/cmTC_478d8.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+cc: error: unrecognized command line option ‘-maltivec’; did you mean ‘-mglibc’?
+CMakeFiles/cmTC_478d8.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_478d8.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_478d8.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_478d8/fast' failed
+make: *** [cmTC_478d8/fast] Error 2
+
+Source file was:
+
+          vector unsigned int vzero() {
+              return vec_splat_u32(0);
+          }
+          int main(int argc, char **argv) { }
+Determining if the include file libunwind.h exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8f374/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8f374.dir/build.make CMakeFiles/cmTC_8f374.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8f374.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos    -o CMakeFiles/cmTC_8f374.dir/CheckIncludeFile.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: libunwind.h: No such file or directory
+ #include <libunwind.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_8f374.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8f374.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_8f374.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8f374/fast' failed
+make: *** [cmTC_8f374/fast] Error 2
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c5683/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c5683.dir/build.make CMakeFiles/cmTC_c5683.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c5683.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy   -o CMakeFiles/cmTC_c5683.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c5683
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5683.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcpy    -rdynamic CMakeFiles/cmTC_c5683.dir/CheckFunctionExists.c.o  -o cmTC_c5683 
+CMakeFiles/cmTC_c5683.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `strlcpy'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c5683.dir/build.make:97: recipe for target 'cmTC_c5683' failed
+make[1]: *** [cmTC_c5683] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c5683/fast' failed
+make: *** [cmTC_c5683/fast] Error 2
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b58b4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b58b4.dir/build.make CMakeFiles/cmTC_b58b4.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b58b4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat   -o CMakeFiles/cmTC_b58b4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b58b4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b58b4.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=strlcat    -rdynamic CMakeFiles/cmTC_b58b4.dir/CheckFunctionExists.c.o  -o cmTC_b58b4 
+CMakeFiles/cmTC_b58b4.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `strlcat'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b58b4.dir/build.make:97: recipe for target 'cmTC_b58b4' failed
+make[1]: *** [cmTC_b58b4] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b58b4/fast' failed
+make: *** [cmTC_b58b4/fast] Error 2
+
+
+Determining if the function _strrev exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a4c76/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a4c76.dir/build.make CMakeFiles/cmTC_a4c76.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4c76.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strrev   -o CMakeFiles/cmTC_a4c76.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a4c76
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4c76.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strrev    -rdynamic CMakeFiles/cmTC_a4c76.dir/CheckFunctionExists.c.o  -o cmTC_a4c76 
+CMakeFiles/cmTC_a4c76.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `_strrev'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a4c76.dir/build.make:97: recipe for target 'cmTC_a4c76' failed
+make[1]: *** [cmTC_a4c76] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a4c76/fast' failed
+make: *** [cmTC_a4c76/fast] Error 2
+
+
+Determining if the function _strupr exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c8a86/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c8a86.dir/build.make CMakeFiles/cmTC_c8a86.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c8a86.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strupr   -o CMakeFiles/cmTC_c8a86.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c8a86
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8a86.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strupr    -rdynamic CMakeFiles/cmTC_c8a86.dir/CheckFunctionExists.c.o  -o cmTC_c8a86 
+CMakeFiles/cmTC_c8a86.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `_strupr'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c8a86.dir/build.make:97: recipe for target 'cmTC_c8a86' failed
+make[1]: *** [cmTC_c8a86] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c8a86/fast' failed
+make: *** [cmTC_c8a86/fast] Error 2
+
+
+Determining if the function _strlwr exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1f5a8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1f5a8.dir/build.make CMakeFiles/cmTC_1f5a8.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1f5a8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strlwr   -o CMakeFiles/cmTC_1f5a8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1f5a8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f5a8.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strlwr    -rdynamic CMakeFiles/cmTC_1f5a8.dir/CheckFunctionExists.c.o  -o cmTC_1f5a8 
+CMakeFiles/cmTC_1f5a8.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `_strlwr'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1f5a8.dir/build.make:97: recipe for target 'cmTC_1f5a8' failed
+make[1]: *** [cmTC_1f5a8] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1f5a8/fast' failed
+make: *** [cmTC_1f5a8/fast] Error 2
+
+
+Determining if the function itoa exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_217c2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_217c2.dir/build.make CMakeFiles/cmTC_217c2.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_217c2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=itoa   -o CMakeFiles/cmTC_217c2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_217c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_217c2.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=itoa    -rdynamic CMakeFiles/cmTC_217c2.dir/CheckFunctionExists.c.o  -o cmTC_217c2 
+CMakeFiles/cmTC_217c2.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `itoa'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_217c2.dir/build.make:97: recipe for target 'cmTC_217c2' failed
+make[1]: *** [cmTC_217c2] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_217c2/fast' failed
+make: *** [cmTC_217c2/fast] Error 2
+
+
+Determining if the function _ltoa exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b0104/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b0104.dir/build.make CMakeFiles/cmTC_b0104.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b0104.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ltoa   -o CMakeFiles/cmTC_b0104.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b0104
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0104.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ltoa    -rdynamic CMakeFiles/cmTC_b0104.dir/CheckFunctionExists.c.o  -o cmTC_b0104 
+CMakeFiles/cmTC_b0104.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `_ltoa'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b0104.dir/build.make:97: recipe for target 'cmTC_b0104' failed
+make[1]: *** [cmTC_b0104] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b0104/fast' failed
+make: *** [cmTC_b0104/fast] Error 2
+
+
+Determining if the function _uitoa exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_77782/fast"
+/usr/bin/make -f CMakeFiles/cmTC_77782.dir/build.make CMakeFiles/cmTC_77782.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77782.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa   -o CMakeFiles/cmTC_77782.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_77782
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77782.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_uitoa    -rdynamic CMakeFiles/cmTC_77782.dir/CheckFunctionExists.c.o  -o cmTC_77782 
+CMakeFiles/cmTC_77782.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `_uitoa'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_77782.dir/build.make:97: recipe for target 'cmTC_77782' failed
+make[1]: *** [cmTC_77782] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_77782/fast' failed
+make: *** [cmTC_77782/fast] Error 2
+
+
+Determining if the function _ultoa exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_65c6b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_65c6b.dir/build.make CMakeFiles/cmTC_65c6b.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65c6b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ultoa   -o CMakeFiles/cmTC_65c6b.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_65c6b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65c6b.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ultoa    -rdynamic CMakeFiles/cmTC_65c6b.dir/CheckFunctionExists.c.o  -o cmTC_65c6b 
+CMakeFiles/cmTC_65c6b.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `_ultoa'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_65c6b.dir/build.make:97: recipe for target 'cmTC_65c6b' failed
+make[1]: *** [cmTC_65c6b] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_65c6b/fast' failed
+make: *** [cmTC_65c6b/fast] Error 2
+
+
+Determining if the function _i64toa exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_991f9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_991f9.dir/build.make CMakeFiles/cmTC_991f9.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_991f9.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_i64toa   -o CMakeFiles/cmTC_991f9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_991f9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_991f9.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_i64toa    -rdynamic CMakeFiles/cmTC_991f9.dir/CheckFunctionExists.c.o  -o cmTC_991f9 
+CMakeFiles/cmTC_991f9.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `_i64toa'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_991f9.dir/build.make:97: recipe for target 'cmTC_991f9' failed
+make[1]: *** [cmTC_991f9] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_991f9/fast' failed
+make: *** [cmTC_991f9/fast] Error 2
+
+
+Determining if the function _ui64toa exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3a1c2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3a1c2.dir/build.make CMakeFiles/cmTC_3a1c2.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3a1c2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ui64toa   -o CMakeFiles/cmTC_3a1c2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3a1c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a1c2.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_ui64toa    -rdynamic CMakeFiles/cmTC_3a1c2.dir/CheckFunctionExists.c.o  -o cmTC_3a1c2 
+CMakeFiles/cmTC_3a1c2.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `_ui64toa'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3a1c2.dir/build.make:97: recipe for target 'cmTC_3a1c2' failed
+make[1]: *** [cmTC_3a1c2] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3a1c2/fast' failed
+make: *** [cmTC_3a1c2/fast] Error 2
+
+
+Determining if the function _stricmp exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a4260/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a4260.dir/build.make CMakeFiles/cmTC_a4260.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4260.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_stricmp   -o CMakeFiles/cmTC_a4260.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a4260
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4260.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_stricmp    -rdynamic CMakeFiles/cmTC_a4260.dir/CheckFunctionExists.c.o  -o cmTC_a4260 
+CMakeFiles/cmTC_a4260.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `_stricmp'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a4260.dir/build.make:97: recipe for target 'cmTC_a4260' failed
+make[1]: *** [cmTC_a4260] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a4260/fast' failed
+make: *** [cmTC_a4260/fast] Error 2
+
+
+Determining if the function _strnicmp exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a2727/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a2727.dir/build.make CMakeFiles/cmTC_a2727.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a2727.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strnicmp   -o CMakeFiles/cmTC_a2727.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a2727
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2727.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=_strnicmp    -rdynamic CMakeFiles/cmTC_a2727.dir/CheckFunctionExists.c.o  -o cmTC_a2727 
+CMakeFiles/cmTC_a2727.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `_strnicmp'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a2727.dir/build.make:97: recipe for target 'cmTC_a2727' failed
+make[1]: *** [cmTC_a2727] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a2727/fast' failed
+make: *** [cmTC_a2727/fast] Error 2
+
+
+Determining if the function sysctlbyname exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f5d17/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f5d17.dir/build.make CMakeFiles/cmTC_f5d17.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f5d17.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname   -o CMakeFiles/cmTC_f5d17.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f5d17
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5d17.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=sysctlbyname    -rdynamic CMakeFiles/cmTC_f5d17.dir/CheckFunctionExists.c.o  -o cmTC_f5d17 
+CMakeFiles/cmTC_f5d17.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `sysctlbyname'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f5d17.dir/build.make:97: recipe for target 'cmTC_f5d17' failed
+make[1]: *** [cmTC_f5d17] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f5d17/fast' failed
+make: *** [cmTC_f5d17/fast] Error 2
+
+
+Determining if the function iconv_open exists in the iconv failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_04200/fast"
+/usr/bin/make -f CMakeFiles/cmTC_04200.dir/build.make CMakeFiles/cmTC_04200.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_04200.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open   -o CMakeFiles/cmTC_04200.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_04200
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04200.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=iconv_open    -rdynamic CMakeFiles/cmTC_04200.dir/CheckFunctionExists.c.o  -o cmTC_04200 -liconv 
+/usr/bin/ld: cannot find -liconv
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_04200.dir/build.make:97: recipe for target 'cmTC_04200' failed
+make[1]: *** [cmTC_04200] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_04200/fast' failed
+make: *** [cmTC_04200/fast] Error 2
+
+
+Determining if the function alloca exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5bd5c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5bd5c.dir/build.make CMakeFiles/cmTC_5bd5c.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5bd5c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca   -o CMakeFiles/cmTC_5bd5c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘alloca’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_5bd5c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bd5c.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=alloca    -rdynamic CMakeFiles/cmTC_5bd5c.dir/CheckFunctionExists.c.o  -o cmTC_5bd5c 
+CMakeFiles/cmTC_5bd5c.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `alloca'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_5bd5c.dir/build.make:97: recipe for target 'cmTC_5bd5c' failed
+make[1]: *** [cmTC_5bd5c] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5bd5c/fast' failed
+make: *** [cmTC_5bd5c/fast] Error 2
+
+
+Determining if the function dlopen exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8f14d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8f14d.dir/build.make CMakeFiles/cmTC_8f14d.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8f14d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_8f14d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8f14d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f14d.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=dlopen    -rdynamic CMakeFiles/cmTC_8f14d.dir/CheckFunctionExists.c.o  -o cmTC_8f14d 
+CMakeFiles/cmTC_8f14d.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `dlopen'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8f14d.dir/build.make:97: recipe for target 'cmTC_8f14d' failed
+make[1]: *** [cmTC_8f14d] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8f14d/fast' failed
+make: *** [cmTC_8f14d/fast] Error 2
+
+
+Determining if the include file audio/audiolib.h exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_235f8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_235f8.dir/build.make CMakeFiles/cmTC_235f8.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_235f8.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos    -o CMakeFiles/cmTC_235f8.dir/CheckIncludeFile.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: audio/audiolib.h: No such file or directory
+ #include <audio/audiolib.h>
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_235f8.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_235f8.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_235f8.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_235f8/fast' failed
+make: *** [cmTC_235f8/fast] Error 2
+
+
+Determining if the include file samplerate.h exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b0eee/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b0eee.dir/build.make CMakeFiles/cmTC_b0eee.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b0eee.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos    -o CMakeFiles/cmTC_b0eee.dir/CheckIncludeFile.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: samplerate.h: No such file or directory
+ #include <samplerate.h>
+          ^~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_b0eee.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_b0eee.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_b0eee.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b0eee/fast' failed
+make: *** [cmTC_b0eee/fast] Error 2
+
+
+Performing C SOURCE FILE Test HAVE_VIDEO_RPI failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ccdab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ccdab.dir/build.make CMakeFiles/cmTC_ccdab.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ccdab.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_VIDEO_RPI  -I/opt/vc/include/interface/vmcs_host/linux/ -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include  -L/opt/vc/lib   -o CMakeFiles/cmTC_ccdab.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: bcm_host.h: No such file or directory
+         #include <bcm_host.h>
+                  ^~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_ccdab.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_ccdab.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_ccdab.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ccdab/fast' failed
+make: *** [cmTC_ccdab/fast] Error 2
+
+Source file was:
+
+        #include <bcm_host.h>
+        int main(int argc, char **argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_OPENGLES_V1 failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a063d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a063d.dir/build.make CMakeFiles/cmTC_a063d.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a063d.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_VIDEO_OPENGLES_V1   -o CMakeFiles/cmTC_a063d.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c:2:16: fatal error: GLES/gl.h: No such file or directory
+       #include <GLES/gl.h>
+                ^~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_a063d.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a063d.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_a063d.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a063d/fast' failed
+make: *** [cmTC_a063d/fast] Error 2
+
+Source file was:
+
+      #include <GLES/gl.h>
+      #include <GLES/glext.h>
+      int main (int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_VDK failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6df27/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6df27.dir/build.make CMakeFiles/cmTC_6df27.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6df27.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_VIDEO_VIVANTE_VDK   -o CMakeFiles/cmTC_6df27.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: gc_vdk.h: No such file or directory
+         #include <gc_vdk.h>
+                  ^~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_6df27.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_6df27.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_6df27.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6df27/fast' failed
+make: *** [cmTC_6df27/fast] Error 2
+
+Source file was:
+
+        #include <gc_vdk.h>
+        int main(int argc, char** argv) {}
+Performing C SOURCE FILE Test HAVE_VIDEO_VIVANTE_EGL_FB failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_accff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_accff.dir/build.make CMakeFiles/cmTC_accff.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_accff.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_VIDEO_VIVANTE_EGL_FB   -o CMakeFiles/cmTC_accff.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c:4:18: fatal error: EGL/eglvivante.h: No such file or directory
+         #include <EGL/eglvivante.h>
+                  ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_accff.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_accff.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_accff.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_accff/fast' failed
+make: *** [cmTC_accff/fast] Error 2
+
+Source file was:
+
+        #define LINUX
+        #define EGL_API_FB
+        #include <EGL/eglvivante.h>
+        int main(int argc, char** argv) {}
+Determining if the include file fcitx/frontend.h exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f50ee/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f50ee.dir/build.make CMakeFiles/cmTC_f50ee.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f50ee.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos    -o CMakeFiles/cmTC_f50ee.dir/CheckIncludeFile.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: fcitx/frontend.h: No such file or directory
+ #include <fcitx/frontend.h>
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_f50ee.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f50ee.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_f50ee.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f50ee/fast' failed
+make: *** [cmTC_f50ee/fast] Error 2
+
+
+Performing C SOURCE FILE Test HAVE_INPUT_TSLIB failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1b13e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1b13e.dir/build.make CMakeFiles/cmTC_1b13e.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1b13e.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_INPUT_TSLIB   -o CMakeFiles/cmTC_1b13e.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: tslib.h: No such file or directory
+         #include "tslib.h"
+                  ^~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_1b13e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_1b13e.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_1b13e.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1b13e/fast' failed
+make: *** [cmTC_1b13e/fast] Error 2
+
+Source file was:
+
+        #include "tslib.h"
+        int main(int argc, char** argv) { }
+Determining if the function hid_init exists in the usbhid failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b8ffd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b8ffd.dir/build.make CMakeFiles/cmTC_b8ffd.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b8ffd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTC_b8ffd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b8ffd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8ffd.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init    -rdynamic CMakeFiles/cmTC_b8ffd.dir/CheckFunctionExists.c.o  -o cmTC_b8ffd -lusbhid 
+/usr/bin/ld: cannot find -lusbhid
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b8ffd.dir/build.make:97: recipe for target 'cmTC_b8ffd' failed
+make[1]: *** [cmTC_b8ffd] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b8ffd/fast' failed
+make: *** [cmTC_b8ffd/fast] Error 2
+
+
+Determining if the include file usb.h exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_694aa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_694aa.dir/build.make CMakeFiles/cmTC_694aa.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_694aa.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos    -o CMakeFiles/cmTC_694aa.dir/CheckIncludeFile.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: usb.h: No such file or directory
+ #include <usb.h>
+          ^~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_694aa.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_694aa.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_694aa.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_694aa/fast' failed
+make: *** [cmTC_694aa/fast] Error 2
+
+
+Determining if the include file libusb.h exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e264f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e264f.dir/build.make CMakeFiles/cmTC_e264f.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e264f.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos    -o CMakeFiles/cmTC_e264f.dir/CheckIncludeFile.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: libusb.h: No such file or directory
+ #include <libusb.h>
+          ^~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_e264f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_e264f.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_e264f.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e264f/fast' failed
+make: *** [cmTC_e264f/fast] Error 2
+
+
+Determining if the function hid_init exists in the usb failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0f6d8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0f6d8.dir/build.make CMakeFiles/cmTC_0f6d8.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0f6d8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init   -o CMakeFiles/cmTC_0f6d8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0f6d8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f6d8.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=hid_init    -rdynamic CMakeFiles/cmTC_0f6d8.dir/CheckFunctionExists.c.o  -o cmTC_0f6d8 -lusb 
+/usr/bin/ld: cannot find -lusb
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0f6d8.dir/build.make:97: recipe for target 'cmTC_0f6d8' failed
+make[1]: *** [cmTC_0f6d8] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0f6d8/fast' failed
+make: *** [cmTC_0f6d8/fast] Error 2
+
+
+Performing C SOURCE FILE Test HAVE_USBHID failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bb240/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bb240.dir/build.make CMakeFiles/cmTC_bb240.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bb240.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_USBHID   -o CMakeFiles/cmTC_bb240.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c:10:19: fatal error: dev/usb/usb.h: No such file or directory
+         # include <dev/usb/usb.h>
+                   ^~~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_bb240.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_bb240.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_bb240.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bb240/fast' failed
+make: *** [cmTC_bb240/fast] Error 2
+
+Source file was:
+
+       #include <sys/types.h>
+        #if defined(HAVE_USB_H)
+        #include <usb.h>
+        #endif
+        #ifdef __DragonFly__
+        # include <bus/usb/usb.h>
+        # include <bus/usb/usbhid.h>
+        #else
+        # include <dev/usb/usb.h>
+        # include <dev/usb/usbhid.h>
+        #endif
+        #if defined(HAVE_USBHID_H)
+        #include <usbhid.h>
+        #elif defined(HAVE_LIBUSB_H)
+        #include <libusb.h>
+        #elif defined(HAVE_LIBUSBHID_H)
+        #include <libusbhid.h>
+        #endif
+        int main(int argc, char **argv) {
+          struct report_desc *repdesc;
+          struct usb_ctl_report *repbuf;
+          hid_kind_t hidkind;
+          return 0;
+        }
+Performing C SOURCE FILE Test HAVE_PTHREAD_NP_H failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_45bd2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_45bd2.dir/build.make CMakeFiles/cmTC_45bd2.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45bd2.dir/src.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DHAVE_PTHREAD_NP_H   -D_REENTRANT -pthread   -o CMakeFiles/cmTC_45bd2.dir/src.c.o   -c /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp/src.c:3:20: fatal error: pthread_np.h: No such file or directory
+           #include <pthread_np.h>
+                    ^~~~~~~~~~~~~~
+compilation terminated.
+CMakeFiles/cmTC_45bd2.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_45bd2.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_45bd2.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_45bd2/fast' failed
+make: *** [cmTC_45bd2/fast] Error 2
+
+Source file was:
+
+          #include <pthread.h>
+          #include <pthread_np.h>
+          int main(int argc, char** argv) { return 0; }
+Determining if the function pthread_set_name_np exists failed with the following output:
+Change Dir: /home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ac7bb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ac7bb.dir/build.make CMakeFiles/cmTC_ac7bb.dir/build
+make[1]: Entering directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ac7bb.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=pthread_set_name_np   -D_REENTRANT -pthread   -o CMakeFiles/cmTC_ac7bb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ac7bb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac7bb.dir/link.txt --verbose=1
+/usr/bin/cc -g -O3 -idirafter /home/feint/Feint_project/SDL2-2.0.10/src/video/khronos -DCHECK_FUNCTION_EXISTS=pthread_set_name_np   -D_REENTRANT -pthread    -rdynamic CMakeFiles/cmTC_ac7bb.dir/CheckFunctionExists.c.o  -o cmTC_ac7bb 
+CMakeFiles/cmTC_ac7bb.dir/CheckFunctionExists.c.o: In function `main':
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:17: undefined reference to `pthread_set_name_np'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ac7bb.dir/build.make:97: recipe for target 'cmTC_ac7bb' failed
+make[1]: *** [cmTC_ac7bb] Error 1
+make[1]: Leaving directory '/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ac7bb/fast' failed
+make: *** [cmTC_ac7bb/fast] Error 2
+
+

@@ -1,0 +1,16 @@
+# Hashes of file build rules.
+0b92ef799bc7b96aaddf89d05ef2dbe0 CMakeFiles/uninstall
+cb0ad05d1c23684616ceccc31ed7f0b4 wayland-generated-protocols/org-kde-kwin-server-decoration-manager-client-protocol.h
+5e38d91d2b027f3acee546fea3b44119 wayland-generated-protocols/org-kde-kwin-server-decoration-manager-protocol.c
+652119325f4139a5eb22d65c7d19f1f4 wayland-generated-protocols/pointer-constraints-unstable-v1-client-protocol.h
+145374f5613571e3fb7cb09d32fe6ba7 wayland-generated-protocols/pointer-constraints-unstable-v1-protocol.c
+963378dadc8bbb75372f4fd6cdbb2abc wayland-generated-protocols/relative-pointer-unstable-v1-client-protocol.h
+6372d0725c0be9f544db89dfed14703d wayland-generated-protocols/relative-pointer-unstable-v1-protocol.c
+a52a5e2fe8efe21a1e43da1191f93c6f wayland-generated-protocols/wayland-client-protocol.h
+17f09023cf92a72039a8e72562548a8b wayland-generated-protocols/wayland-protocol.c
+65a58413fa3e3837bf2fbdf769c2ea7c wayland-generated-protocols/xdg-decoration-unstable-v1-client-protocol.h
+85f3b3b2df472e9c59a56a9292d73a7e wayland-generated-protocols/xdg-decoration-unstable-v1-protocol.c
+0601cd050d82de6e1686c458fe9eef14 wayland-generated-protocols/xdg-shell-client-protocol.h
+8b480618bf2bba8b1eab738ad85ba6e4 wayland-generated-protocols/xdg-shell-protocol.c
+c5fa666cdb1a0f74bc3985873bc3d433 wayland-generated-protocols/xdg-shell-unstable-v6-client-protocol.h
+e3d7a161e61fe25eee5aeb81d13f589a wayland-generated-protocols/xdg-shell-unstable-v6-protocol.c

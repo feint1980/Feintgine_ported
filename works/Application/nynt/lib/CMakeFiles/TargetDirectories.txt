@@ -1,0 +1,10 @@
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/install/strip.dir
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/install/local.dir
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/list_install_components.dir
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/SDL2.dir
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/edit_cache.dir
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/install.dir
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/SDL2-static.dir
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/uninstall.dir
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/SDL2main.dir
+/home/feint/Feint_project/SDL2-2.0.10/build2/CMakeFiles/rebuild_cache.dir
